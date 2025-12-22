@@ -1,0 +1,79 @@
+
+.navbar {
+    border-bottom: 3px solid black;
+}
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.tech-tile {
+    width: 160px;
+    height: 160px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.tech-tile img {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+}
+
+#tools {
+    text-align: left;
+
+}
+
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    min-height: 100vh;
+    background-color: white;
+    padding: 0 30px;
+}
+
+.page-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 0;
+    padding-top: 100px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.hero h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 12px;
+}
+
