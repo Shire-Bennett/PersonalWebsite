@@ -46,12 +46,18 @@
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
-    align-items: center;
-    padding: 60px 0;
-    padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 260px; 
+  gap: 40px;
+  align-items: start;
+  padding-top: 110px; 
+  padding-bottom: 40px;
+}
+
+
+.hero-image {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero h1 {
@@ -76,4 +82,75 @@
     max-width: 250px;
     border-radius: 12px;
 }
+
+.site-footer {
+    border-top: 3px solid black;
+    margin-top: auto;
+    padding: 20px 0;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.footer-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 24px;
+  align-items: start;
+}
+
+.about-text {
+  margin: 0;
+  line-height: 1.7;
+  max-width: 700px;
+}
+
+.about-photo {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid black;
+}
+
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 
